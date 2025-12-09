@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>칭찬스티커 대시보드</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>칭찬스티커 대시보드</h1>
+  </header>
+
+  <main class="container">
+    <!-- 새로 받은 스티커 알림 영역 -->
+    <section id="new-stickers-section" class="card hidden">
+      <h2>새로 받은 칭찬스티커 🎉</h2>
+      <p class="subtitle">이번 접속 이후 처음 보는 스티커들이에요.</p>
+      <ul id="new-stickers-list"></ul>
+      <button id="mark-as-read-btn" class="primary-button">모두 확인했어요</button>
+    </section>
+
+    <!-- 총 스티커 현황 -->
+    <section id="total-stickers-section" class="card">
+      <h2>지금까지 모은 칭찬스티커</h2>
+      <p class="total-text">
+        총 <span id="total-count">0</span> 개의 스티커를 모았어요 👏
+      </p>
+      <div id="sticker-images-wrapper"></div>
+      <p id="sticker-extra-info" class="extra-info"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>칭찬스티커 실험용 화면 · GitHub Pages + Teams 탭에서 사용 가능</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
